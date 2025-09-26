@@ -51,4 +51,3 @@ try:
 except KeyboardInterrupt:
     print("停止しました")
 finally:
-    driver.quit()
