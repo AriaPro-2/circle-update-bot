@@ -1,4 +1,4 @@
-name: Circle Navi Updater
+name: circle-update-bot
 
 on:
   schedule:
