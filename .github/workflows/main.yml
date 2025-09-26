@@ -1,4 +1,4 @@
-name: circle-update-bot
+name: Circle Navi Updater
 
 on:
   schedule:
@@ -25,7 +25,9 @@ jobs:
       - name: Install Chrome
         run: |
           sudo apt-get update
-          sudo apt-get install -y wget unzip xvfb libxi6 libatk1.0-0 libgtk-3-0 libxss1 libasound2
+          sudo apt-get install -y wget unzip xvfb \
+            libxi6 libatk1.0-0 libgtk-3-0 libxss1 libasound2 \
+            libappindicator3-1 fonts-liberation libnss3 libdbus-glib-1-2
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
